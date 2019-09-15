@@ -1,23 +1,23 @@
 <?php
 class Personaje  {
-  private $nombre;
+  private $nombre_personaje;
   private $puntos_de_vida;
   private $velocidad_de_movimiento;
   private $puntos_de_daño;
-  
-  public function __construct($n, $pv, $vm, $pd) {
-    $this->nombre=$n;
+
+  public function __construct($npj, $pv, $vm, $pd) {
+    $this->nombre_personaje=$npj;
     $this->puntos_de_vida=$pv;
     $this->velocidad_de_movimiento=$vm;
     $this->puntos_de_daño=$pd;
   }
-  public function Getnombre()
+  public function GetnombrePersonaje()
   {
-  return $this->$nombre;
+  return $this->nombre_personaje;
   }
-  public function Setnombre($n)
+  public function SetnombrePersonaje($npj)
   {
-  $this->nombre=$n;
+  $this->nombre_personaje=$npj;
   }
   public function Getpuntosde_vida()
   {

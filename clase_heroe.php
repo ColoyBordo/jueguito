@@ -1,42 +1,42 @@
 <?php
-include_once 'Personaje.php'
+include_once 'clase_personaje.php'
 class Heroe extends Personaje  {
 
-    private $id;
-    private $descripcion;
-    private $tipo;
+    private $idHeroe;
+    private $descripcionHeroe;
+    private $tipoHeroe;
 
-    public function __construct($n, $pv, $vm, $pd,$id,$d,$t) {
-      parent::__construct($n,$pv,$vm,$pd);
-      $this->id=$id;
-      $this->$descripcion=$d;
-      $this->$tipo=$t;
-    }
-
-    public function getid()
-    {
-      return $this->id;
-    }
-    public function gettipo()
-    {
-      return $this->tipo;
-    }
-    public function getdescripcion()
-    {
-      return $this->descripcion;
+    public function __construct($n, $pv, $vm, $pd,$idH,$dH,$tH) {
+      parent::__construct($npj,$pv,$vm,$pd);
+      $this->idHeroe=$idH;
+      $this->descripcionHeroe=$dH;
+      $this->tipoHeroe=$tH;
     }
 
-    public function setid($id)
+    public function getidheroe()
     {
-      $this->id=$id;
+      return $this->idHeroe;
     }
-    public function setdescripcion($d)
+    public function gettipoHeroe()
     {
-      $this->descripcion=$d;
+      return $this->tipoHeroe;
     }
-    public function settipo($t)
+    public function getdescripcionHeroe()//Hay que expecficar que es la descripcion del heroe, por es pongo getdescripcionHeroe
     {
-      $this->tipo=$t;
+      return $this->descripcionHeroe;
+    }
+
+    public function setidheroe($idH)
+    {
+      $this->idHeroe=$idH;
+    }
+    public function setdescripcionHeroe($dH)
+    {
+      $this->descripcionHeroe=$dH;
+    }
+    public function settipo($tH)
+    {
+      $this->tipoHeroe=$tH;
 
     }
 }

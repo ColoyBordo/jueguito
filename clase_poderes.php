@@ -1,41 +1,41 @@
 <?php
 class Poderes  {
-  private $id;
-  private $nombre;
-  private $descripcion;
+  private $idPoder;
+  private $nombrePoder;
+  private $descripcionPoder;
   private $aumento;
   private $caracteristica_afectada;
-  
-  public function __construct($id, $n, $d, $a, $ca) {
-    $this->id=$id;
-    $this->nombre=$n;
-    $this->descripcion=$d;
+
+  public function __construct($idP, $nP, $dP, $a, $ca) {
+    $this->idPoder=$idP;
+    $this->$nombrePoder=$nP;
+    $this->descripcionPoder=$dP;
     $this->aumento=$a;
     $this->caracteristica_afectada=$ca;
   }
-  public function Getid()
+  public function Getidpoder()// lo mismo con este id
   {
-  return $this->$id;
+  return $this->$idP;
   }
-  public function Setid($id)
+  public function SetidPoder($id)
   {
-  $this->id=$id;
+  $this->idPoder=$idP;
   }
-  public function Getnombre()
+  public function GetnombrePoder()
   {
-  return $this->$nombre;
+  return $this->$nombrePoder;
   }
-  public function Setnombre($n)
+  public function SetnombrePoder($nP)
   {
-  $this->nombre=$n;
+  $this->nombrePoder=$nP;
   }
-  public function Getdescripcion()
+  public function GetdescripcionPoder()//Descripcion del poder,por eso le pongo GetdescripcionP
   {
-  return $this->$descripcion;
+  return $this->$descripcionPoder;
   }
-  public function Setdescripcion($d)
+  public function setdescripcionPoder($dP)
   {
-  $this->descripcion=$d;
+  $this->descripcionPoder=$dP;
   }
   public function Getaumento()
   {
