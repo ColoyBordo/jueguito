@@ -1,19 +1,19 @@
 <?php
-include_once 'Personaje.php'
+include_once 'clase_personaje.php'
 
 class Enemigos extends Personaje {
   private $dar_monedas;
-  private $id;
-  private $description;
-  private $tipo;
+  private $idEnemigos;
+  private $descriptionEnemigos;
+  private $tipoEnemigos;
 
 
-  public function __construct($n, $pv, $vm, $pd, $dm, $id, $d, $t) {
-    parent::__construct($n,$pv,$vm,$pd);
+  public function __construct($npj, $pv, $vm, $pd, $dm, $idE, $dE, $tE) {
+    parent::__construct($npj,$pv,$vm,$pd);
     $this->dar_monedas=$dm;
-    $this->id=$id;
-    $this->description=$d;
-    $this->tipo=$t;
+    $this->idEnemigos=$idE;
+    $this->descriptionEnemigos=$dE;
+    $this->tipoEnemigos=$tE;
   }
 
   public function Getdar_monedas()
@@ -24,29 +24,29 @@ class Enemigos extends Personaje {
   {
   $this->dar_monedas=$dm;
   }
-  public function Getid()
+  public function GetidEnemigos()
   {
-  return $this->$id;
+  return $this->$idE;
   }
-  public function Setpuntosde_vida($id)
+  public function SetidEnemigos($id)
   {
-  $this->id=$id;
+  $this->idEnemigos=$idE;
   }
-  public function Getdescription()
+  public function GetdescriptionEnemigos()
   {
-  return $this->$description;
+  return $this->$descriptionEnemigos;
   }
-  public function Setdescription($d)
+  public function SetdescriptionEnemigos($dE)
   {
-  $this->description=$d;
+  $this->descriptionEnemigos=$dE;
   }
-  public function Gettipo()
+  public function GettipoEnemigos()
   {
-  return $this->$tipo;
+  return $this->$tipoEnemigos;
   }
-  public function Settipo($t)
+  public function Settipo($tE)
   {
-  $this->tipo=$t;
+  $this->tipoEnemigos=$tE;
   }
 
 }
