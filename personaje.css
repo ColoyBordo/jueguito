@@ -1,0 +1,73 @@
+
+body {
+  background-color: #A1DC9E;
+}
+
+.seleccionar_personaje {
+    text-align: center;
+  	margin:20px auto 40px auto;
+  	margin-top: 100px;	
+  	border:1px solid #d9d9d9;
+  	height:225px;
+ 	  width: 350px;
+  	overflow: hidden;
+   	position:relative;
+  	background-color: #6FC869;
+
+   	border-radius: 35px 0px 35px 0px;
+  	-moz-border-radius: 35px 0px 35px 0px;
+  	-webkit-border-radius: 35px 0px 35px 0px;
+	  border: 3px solid #2C7027;
+}
+
+select {
+   background: transparent;
+   border: 2px solid #116717;
+   box-sizing: border-box;
+   border-radius: 10px 10px 10px 10px;
+   -moz-appearance: none;
+	 -webkit-appearance: none;
+   margin-top: 50px;
+   font-size: 14px;
+   height: 30px;
+   padding: 5px;
+   width: 250px;
+   background-color: #41A648;
+}
+
+.select_css::-ms-expand {
+    display: none;
+}
+
+.select_css:hover {
+    border-color: #062708;
+}
+
+input[type=submit]{
+  margin-top: 50px;
+  width: 100px;
+  height: 33px;
+  margin-right: 5px;
+  background: #5AB154;
+  border-radius: 10px 10px 10px 10px;
+}
+
+input[id=volver] {
+  margin-top: 25px;
+  width: 100px;
+  height: 30px;
+  margin-right: 10px;
+  float: right;
+  background: #B81F10;
+  border-radius: 10px 10px 10px 10px;
+}
+
+input[id=verPj] {
+  margin-top: 25px;
+  width: 100px;
+  height: 30px;
+  margin-left: 5px;
+  float: left;
+  background: #12A516;
+  border-radius: 10px 10px 10px 10px;
+}

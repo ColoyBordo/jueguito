@@ -1,0 +1,89 @@
+body {
+  background-color: #7FA5F7 /*A1DC9E*/;
+}
+
+.principal_sala {
+	text-align: center;
+  	margin:20px auto 40px auto;
+  	margin-top: 100px;	
+  	border:1px solid #d9d9d9;
+  	height:400px;
+ 	  width: 700px;
+  	overflow: hidden;
+   	position:relative;
+  	background-color: #316DEC /*6FC869*/;
+
+   	border-radius: 35px 0px 35px 0px;
+  	-moz-border-radius: 35px 0px 35px 0px;
+  	-webkit-border-radius: 35px 0px 35px 0px;
+	  border: 3px solid #0B204D /*2C7027*/;
+}
+
+.sala {
+  margin: auto;
+  margin-left: 25px;
+  float: left;
+  background-color: #6FC869;
+  margin-top: 20px;
+  height: 200px;
+  width: 200px;
+  border-radius: 35px 35px 35px 35px;
+
+}
+
+
+input[id="sala1"] {
+  text-align: center;
+  margin-top: 10px;
+  width: 140px;
+  height: 25px;
+  margin-right: 5px;
+  background: #3252B9 /*5AB154*/;
+  border-radius: 10px 10px 10px 10px;
+}
+
+input[id="sala2"] {
+  text-align: center;
+  margin-top: 10px;
+  width: 140px;
+  height: 25px;
+  margin-right: 5px;
+  background: #3252B9 /*5AB154*/;
+  border-radius: 10px 10px 10px 10px;
+}
+
+input[id="sala3"] {
+   text-align: center;
+  margin-top: 10px;
+  width: 140px;
+  height: 25px;
+  margin-right: 5px;
+  background: #3252B9 /*5AB154*/;
+  border-radius: 10px 10px 10px 10px;
+}
+
+input[id=volver] {
+  margin-top: 50px;
+  margin-right: 20px;
+  width: 110px;
+  height: 40px;
+  float: right;
+  background: #B81F10;
+  border-radius: 10px 10px 10px 10px;
+}
+
+h1 {
+  text-align: center;
+  width: 300px;
+  height: 40px;
+  border-radius: 10px 10px 10px 10px; 
+  background-color: #5AB154;
+}
+
+h4 {
+margin-top: 15px;
+}
+
+.titulo {
+  margin-left: 200px;
+}
