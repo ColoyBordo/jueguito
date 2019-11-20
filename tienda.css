@@ -1,0 +1,122 @@
+body {
+  background-color: #A1DC9E;
+}
+
+.titulo {
+  text-decoration-color: #421EC8;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.cont_titulo {
+    text-align: center;
+    margin:auto auto auto auto;
+    margin-top: 20px; 
+    border:1px solid #d9d9d9;
+    height:60px;
+    width: 400px;
+    overflow: hidden;
+    position:relative;
+    background-color: #6FC869;
+
+    border-radius: 35px 0px 0px 0px;
+    -moz-border-radius: 35px 0px 0px 0px;
+    -webkit-border-radius: 35px 0px 0px 0px;
+    border: 3px solid #2C7027;
+}
+
+.tienda {
+	 text-align: center;
+  	margin:20px auto auto auto;
+  	margin-top: 5px;	
+  	border:1px solid #d9d9d9;
+  	height:600px;
+ 	  width: 725px;
+  	overflow: hidden;
+   	position:relative;
+  	background-color: #6FC869;
+
+   	border-radius: 35px 0px 0px 0px;
+  	-moz-border-radius: 35px 0px 0px 0px;
+  	-webkit-border-radius: 35px 0px 0px 0px;
+	  border: 3px solid #2C7027;
+
+    overflow: auto;
+
+}
+
+.objeto {
+  margin: auto;
+  margin-left: 25px;
+  float: left;
+  background-color: #1B9CE1;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  height: 250px;
+  width: 150px;
+  border-radius: 35px 35px 35px 35px;
+}
+
+p {
+  margin-top: 0px;
+  margin-bottom: 2px;
+  font: bold 15px/1.5 arial, helvetica, sans-serif;
+}
+
+#nombreobj {
+margin-top: 10px;
+}
+
+#costo {
+  float: left;
+  margin-top: 0px;
+  margin-bottom: 2px;
+  margin-right: 0px;
+  margin-left: 20px;
+  font: bold 15px/1.5 arial, helvetica, sans-serif;
+}
+
+#coin {
+  float: left;
+  margin-bottom: 0px;
+}
+
+input[id="check"] {
+  float: right;
+  width: 20px;
+  height: 20px;
+  margin-left: 0px;
+  margin-right: 20px;
+  margin-top: 0px;
+  background: #3252B9 /*5AB154*/;
+  border-radius: 10px 10px 10px 10px;
+}
+
+input[id=comprar] {
+  margin-top: 5px;
+  width: 100px;
+  height: 30px;
+  margin-left: 500px;
+  float: left;
+  background: #B81F10;
+  border-radius: 10px 10px 10px 10px;
+}
+
+input[id=volver] {
+  margin-top: 5px;
+  width: 100px;
+  height: 30px;
+  margin-right: 10px;
+  float: right;
+  background: #3252B9;
+  border-radius: 10px 10px 10px 10px;
+}
+
+
+.volver {
+    text-align: center;
+    margin:20px auto 10px auto;
+    margin-top: 5px; 
+    height:400px;
+    width: 570px; 
+}

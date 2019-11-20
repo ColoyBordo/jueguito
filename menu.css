@@ -1,0 +1,102 @@
+body {
+  background-color: #7FA5F7 /*A1DC9E*/;
+}
+
+.menu {
+	text-align: center;
+  	margin:20px auto 40px auto;
+  	margin-top: 20px;	
+  	border:1px solid #d9d9d9;
+  	height:225px;
+ 	  width: 350px;
+  	overflow: hidden;
+   	position:relative;
+  	background-color: #316DEC /*6FC869*/;
+
+   	border-radius: 35px 0px 35px 0px;
+  	-moz-border-radius: 35px 0px 35px 0px;
+  	-webkit-border-radius: 35px 0px 35px 0px;
+	  border: 3px solid #0B204D /*2C7027*/;
+}
+
+.titulo {
+  margin-top: 5px;
+  margin-left: 7px;
+  height:50px;
+  width: 330px;
+  text-align: center;
+  background-color: #0845DE /*80E313*/;
+
+  border-radius: 35px 0px 35px 0px;
+  -moz-border-radius: 35px 0px 35px 0px;
+  -webkit-border-radius: 35px 0px 35px 0px;
+  border: 3px solid #052678 /*2C7027*/;
+}
+
+.select_css::-ms-expand {
+    display: none;
+}
+
+.select_css:hover {
+    border-color: #062708;
+}
+
+input[id="nuevo_personaje"] {
+  margin-top: 5px;
+  width: 150px;
+  height: 33px;
+  margin-right: 5px;
+  background: #3252B9 /*5AB154*/;
+  border-radius: 10px 10px 10px 10px;
+}
+
+input[id="nueva_partida"] {
+  margin-top: 15px;
+  width: 150px;
+  height: 33px;
+  margin-right: 5px;
+  background: #436AE8 /*5EC006*/;
+  border-radius: 10px 10px 10px 10px;
+}
+
+
+input[id="tienda"] {
+  margin-top: 7px;
+  margin-bottom: 2px;
+  width: 100px;
+  height: 30px;
+  margin-right: 5px;
+  background: #253B85 /*EC810F*/;
+  border-radius: 10px 10px 10px 10px;
+}
+
+
+input[id="salir"] {
+  margin-top: 9px;
+  margin-bottom: 2px;
+  width: 80px;
+  height: 25px;
+  margin-left: 220px;
+  background: #FA363C /*B81F10*/;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.texto_menu {
+  text-align: center;
+  text-decoration-color: 
+}
+
+h2{
+  text-align: center;
+}
+
+.bienvenido {
+height: 10%;
+width: 25%;
+margin: 0% 37% 0% 37%;
+text-align: center;
+
+background-color: #316DEC;
+border-radius: 35px 35px 35px 35px;
+border: 3px solid #0B204D
+}
