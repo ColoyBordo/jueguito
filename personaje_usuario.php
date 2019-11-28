@@ -1,11 +1,11 @@
-<?php 
+<?php
 
 session_start();
 $idpj = $_POST['heroes'];
 
-$conexion=mysqli_connect("localhost","root","diciembre1999")or
+$conexion=mysqli_connect("localhost:3307","root","")or
 die ("Problema con la conexion");
-mysqli_select_db($conexion,"juegito_php_html");
+mysqli_select_db($conexion,"phpmyadmin");
 
 
 $selectid = "select idusuarios from usuarios where usuario='".$_SESSION['usuario']."';";

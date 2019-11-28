@@ -1,0 +1,20 @@
+body {
+  background-color: #7FA5F7 /*A1DC9E*/;
+}
+
+.principal {
+  text-align: center;
+    margin:20px auto 40px auto;
+    margin-top: 20px;
+    border:1px solid #d9d9d9;
+    height:225px;
+    width: 350px;
+    overflow: hidden;
+    position:relative;
+    background-color: #316DEC /*6FC869*/;
+
+    border-radius: 35px 0px 35px 0px;
+    -moz-border-radius: 35px 0px 35px 0px;
+    -webkit-border-radius: 35px 0px 35px 0px;
+    border: 3px solid #0B204D /*2C7027*/;
+}

@@ -17,14 +17,14 @@ if(strlen($usuario) < 5){
       $error_clave = 'El usuario debe tener al menos 5 caracteres';
       $_SESSION['error_contraseña']=$error_clave;
       header("Location: registro.php");
-     
+
      return false;
   }
    if(strlen($clave) < 6){
       $error_clave = 'La clave debe tener al menos 6 caracteres';
       $_SESSION['error_contraseña']=$error_clave;
       header("Location: registro.php");
-     
+
       return false;
    }
    $contador = $contador + 1;
@@ -32,7 +32,7 @@ if(strlen($usuario) < 5){
       $error_clave = "La clave no puede tener más de 16 caracteres";
       $_SESSION['error_contraseña']=$error_clave;
       header("Location: registro.php");
-     
+
       return false;
    }
    $contador = $contador + 1;
@@ -44,7 +44,7 @@ if(strlen($usuario) < 5){
       return false;
    }
    $contador = $contador + 1;
-   
+
    if (!preg_match('`[0-9]`',$clave)){
       $error_clave = "La clave debe tener al menos un caracter numérico";
       $_SESSION['error_contraseña']=$error_clave;
@@ -53,7 +53,7 @@ if(strlen($usuario) < 5){
       return false;
    }
    $contador = $contador + 1;
-   
+
    if (is_valid_email($mail)) {
       $contador = $contador + 1;
    } else {
@@ -62,18 +62,18 @@ if(strlen($usuario) < 5){
       header("Location: registro.php");
    }
 
-   
-   
-$conexion=mysqli_connect("localhost","root","diciembre1999")or
+
+
+$conexion=mysqli_connect("localhost:3307","root","")or
 die ("Problema con la conexion");
-mysqli_select_db($conexion,"juegito_php_html");
+mysqli_select_db($conexion,"phpmyadmin");
 
 
 if ($contador == 5){
 if($_SESSION['clave'] == $_SESSION['clave2']){
 $usr = $_SESSION['usuario'];
 $pass = $_SESSION['clave'];
-$sql="INSERT INTO usuarios (usuario, clave, mail) VALUES ('$usr', '$pass', '$mail')";
+$sql="INSERT INTO usuarios (usuario, clave, Email) VALUES ('$usr', '$pass', '$mail')";
 
 if (mysqli_query($conexion, $sql)) {
       echo "Registrado correctamente";
@@ -98,5 +98,3 @@ mysqli_close($conexion);
 }
 
 ?>
-
-

@@ -1,20 +1,20 @@
 <?php
 session_start();
 
-		$conexion=mysqli_connect("sql202.tonohost.com","ottos_24554408","coloybordo1234")or
+		$conexion=mysqli_connect("localhost:3307","root","")or
 die ("Problema con la conexion");
-mysqli_select_db($conexion,"ottos_24554408_juegito_php_html");
+mysqli_select_db($conexion,"phpmyadmin");
 /*$consulta_personaje="select p.nomPersonaje,
 p.PuntosdeVida,
 p.puntosdeDano,
-h.descripcionHeroe, 
+h.descripcionHeroe,
 h.tipoheroe,o.nombrePoder,
 o.descripcionPoder,
 o.aumento,
 o.caracteristicaAfectada
-from personaje p 
-join Heroe h on h.idpersonaje= p.idpersonaje 
-join PoderesHeroe a on a.idpersonaje=p.idpersonaje 
+from personaje p
+join Heroe h on h.idpersonaje= p.idpersonaje
+join PoderesHeroe a on a.idpersonaje=p.idpersonaje
 join Poderes o on o.idpoder=a.idpoder where p.idpersonaje = 1;";*/
 
 $consulta_personaje="select * from Heroe";
@@ -68,5 +68,5 @@ $_SESSION['tablapersonaje'] = $tabla_personaje;
 
 ///header('Location: nuevo_personaje.php');
 
-	
+
 		?>

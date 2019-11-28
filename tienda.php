@@ -13,14 +13,14 @@
 
 	<div class="tienda">
 		<form action="compra.php" method="post" name="compra">
-		<?php  
+		<?php
 
-		$conexion=mysqli_connect("localhost","root","diciembre1999")or
+		$conexion=mysqli_connect("localhost:3307","root","")or
 		die ("Problema con la conexion");
-		mysqli_select_db($conexion,"juegito_php_html");
+		mysqli_select_db($conexion,"phpmyadmin");
 
 		$consulta_objeto = "select nombre, tipoobjeto, costo, imagenObjeto from objetos;";
-		
+
 		$consulta_objeto=mysqli_query ($conexion, $consulta_objeto) or die ("Problema en el select".mysqli_error($conexion));
 
 
@@ -41,14 +41,14 @@
 			<input id="comprar" class="comprar" type="submit" value="Comprar">
 		</form>
 
-	
+
 
 	<div class="volver">
 		<form action="menu_juego.php" method="post">
 			<input id="volver" class="volver" type="submit" value="volver">
 		</form>
 	</div>
-	
+
 
 </body>
 </html>

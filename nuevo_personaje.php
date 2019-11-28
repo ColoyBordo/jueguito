@@ -4,15 +4,18 @@
 <html>
 <head>
   <script type="text/javascript">
-
-    function idpj() {
+  var valor='';
+  function carga() {
+      document.getElementById('heroes').value=(document.URL.split('='))[1];
+  }
+  function idpj() {
       var combo = document.getElementById('heroes');
-      var valor = combo.value;
+      valor = combo.value;
       document.location.href='nuevo_personaje.php?pj='+ valor;
     }
 
   function get(idheroe){
-    
+
 
   document.getElementById('heroes').value=idheroe;
 }
@@ -21,7 +24,7 @@
 
 	<title>Personaje</title>
 </head>
-<body>
+<body onload="carga()">
 
 	<link rel=stylesheet href=juego.css>
 
@@ -30,10 +33,10 @@
 	<form action="personaje_usuario.php" method="post">
 
 	<select id='heroes' onchange="idpj()" class="select_css" name="heroes" style="width:150px;">
-	<option name="mago" value="2">Mago</option> 
-	<option name="caballero" value="1">Caballero</option> 
+	<option name="mago" value="2">Mago</option>
+	<option name="caballero" value="1">Caballero</option>
 	<option name="sanador" value="4">Sanador</option>
-	<option name="cazador" value="3">Cazador</option> 
+	<option name="cazador" value="3">Cazador</option>
 	</select>
 	<br>
 	<input type="submit" value="Seleccionar">
@@ -51,23 +54,23 @@
 <?php
 
 
-$conexion=mysqli_connect("localhost","root","diciembre1999")or
+$conexion=mysqli_connect("localhost:3307","root","")or
 die ("Problema con la conexion");
-mysqli_select_db($conexion,"juegito_php_html");
+mysqli_select_db($conexion,"phpmyadmin");
 
 //$consulta_personaje="select * from Heroe";
 
 $consulta_personaje="select p.nomPersonaje,
 p.PuntosdeVida,
 p.puntosdeDano,
-h.descripcionHeroe, 
+h.descripcionHeroe,
 h.tipoheroe,o.nombrePoder,
 o.descripcionPoder,
 o.aumento,
 o.caracteristicaAfectada
-from personaje p 
-join Heroe h on h.idpersonaje= p.idpersonaje 
-join PoderesHeroe a on a.idpersonaje=p.idpersonaje 
+from personaje p
+join Heroe h on h.idpersonaje= p.idpersonaje
+join PoderesHeroe a on a.idpersonaje=p.idpersonaje
 join Poderes o on o.idpoder=a.idpoder where p.idpersonaje = '$_GET[pj]';";
 
 
@@ -76,7 +79,7 @@ $consulta_personaje=mysqli_query ($conexion, $consulta_personaje) or die ("Probl
 
 
 while($row = mysqli_fetch_array($consulta_personaje)) {
-     
+
 ?>
 
 
@@ -125,7 +128,7 @@ while($row = mysqli_fetch_array($consulta_personaje)) {
   </tr>
 
 </table>
-	
+
 
 
 
@@ -133,7 +136,7 @@ while($row = mysqli_fetch_array($consulta_personaje)) {
 
 
 
-  } 
+  }
 
 ?>
 
